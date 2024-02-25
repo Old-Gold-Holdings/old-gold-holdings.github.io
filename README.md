@@ -1,2 +1,2 @@
-# old-gold-holdings.github.io
-Old Gold Holdings
+# Old Gold Holdings
+oldgoldholdings.com
