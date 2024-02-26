@@ -12,6 +12,11 @@
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+    <script
+      charset="utf-8"
+      type="text/javascript"
+      src="//js.hsforms.net/forms/embed/v2.js"
+    ></script>
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
@@ -94,18 +99,6 @@
                       >
                     </td>
                   </tr>
-                  <tr>
-                    <td>Mistral Playground</td>
-                    <td>ChatGPT-like playground for Mistral Platform</td>
-                    <td>
-                      <a
-                        href="https://mistralplayground.com"
-                        target="_blank"
-                        class="icon solid fa-link"
-                        ><span class="label">mistralplayground.com</span></a
-                      >
-                    </td>
-                  </tr>
                 </tbody>
               </table>
             </div>
@@ -162,48 +155,10 @@
         <!-- Contact -->
         <article id="contact">
           <h2 class="major">Contact</h2>
-          <form method="post" action="./formmail.php">
-            <div class="fields">
-              <div class="field">
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email" required />
-              </div>
-              <div class="field half">
-                <label for="realname">Company Name</label>
-                <input type="text" name="realname" id="realname" required />
-              </div>
-              <div class="field half">
-                <label for="website">Company Website</label>
-                <input type="text" name="website" id="website" required />
-              </div>
-              <div class="field">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="4"></textarea>
-              </div>
-              <input
-                type="hidden"
-                name="recipients"
-                value="contact@oldgoldholdings.com"
-              />
-              <input
-                type="hidden"
-                name="subject"
-                value="Website Form Submission"
-              />
-              <input
-                type="hidden"
-                name="required"
-                value="email:Your email address,realname:Your company name,website:Your company website"
-              />
-            </div>
-            <ul class="actions">
-              <li>
-                <input type="submit" value="Send Message" class="primary" />
-              </li>
-              <li><input type="reset" value="Reset" /></li>
-            </ul>
-          </form>
+          <div id="form-container" class="forms"></div>
+		  <br />
           <ul class="icons">
+			<strong>Find us on:&nbsp;&nbsp;</strong>
             <li>
               <a
                 href="https://twitter.com/oldgoldholdings"
@@ -242,6 +197,14 @@
     <div id="bg"></div>
 
     <!-- Scripts -->
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "45370110",
+        formId: "445c2f8e-3729-409d-a406-b85e917de46d",
+        target: "#form-container",
+      });
+    </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
